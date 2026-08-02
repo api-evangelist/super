@@ -1,7 +1,13 @@
 aid: super
 name: Super
-description: Super is a company surfaced as a portfolio company of bullpen-capital and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Super (super.gs) is an early-stage consumer entertainment application
+  built by Outpace Studios and backed by Bullpen Capital, positioned around the tagline
+  "Entertainment you can cash out." As of mid-2026 the product is pre-launch: the
+  public site is a single-page marketing and waitlist experience with no published
+  developer platform, API, SDKs, or documentation. This API Evangelist profile tracks
+  Super as a portfolio lead and currently carries only a live domain-security probe
+  of super.gs; it will be enriched further if and when the company ships a public
+  API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/super/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +15,28 @@ x-backed-by:
 - bullpen-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://staging.outpacestudios.com/super/og-image.png
 tags:
 - Company
+- Entertainment
+- Consumer
+- Mobile
+- Gaming
+- Rewards
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/super-domain-security.yml
 - type: Website
   url: https://super.gs
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
